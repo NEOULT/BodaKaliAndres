@@ -1,5 +1,4 @@
 import React from "react";
-import "./LandingSection.css";
 
 export default function LandingSection({ children }) {
   return (

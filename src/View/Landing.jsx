@@ -9,6 +9,9 @@ import DressCodeSection from "../components/DressCodeSection";
 import NormasSection from "../components/NormasSection";
 import TeEsperamosSection from "../components/TeEsperamosSection";
 import CeremoniaSection from "../components/CeremoniaSection";
+import ModalNormas from "../components/ModalNormas";
+import ModalMenu from "../components/ModalMenu";
+import { useState } from "react";
 import RecepcionSection from "../components/RecepcionSection";
 import NinosSection from "../components/NinosSection";
 import SobreRecepcionSection from "../components/SobreRecepcionSection";
@@ -19,11 +22,15 @@ import RegaloSection from "../components/RegaloSection";
 
 
 export default function Landing() {
+
+  
+
   return (
     <div className="landing-page">
       <LandingHero />
       {/* <DecorFlor src="/img/landing/flor2.png" className="flor-izquierda" /> */}
-      
+  
+
       <LandingSection>
         <h2 className="landing-title">UNA PROMESA...</h2>
         <p className="landing-main-text">El Señor mismo marchará al frente de ti y estará contigo; nunca te dejará ni te abandonará. No temas ni te desanimes</p>
