@@ -14,6 +14,7 @@ import NinosSection from "../components/NinosSection";
 import SobreRecepcionSection from "../components/SobreRecepcionSection";
 import MenuSection from "../components/MenuSection";
 import ConfirmacionSection from "../components/ConfirmacionSection";
+import FotosSection from "../components/FotosSection";
 
 
 export default function Landing() {
@@ -74,6 +75,7 @@ export default function Landing() {
       <SobreRecepcionSection />
   <MenuSection />
   <ConfirmacionSection />
+  <FotosSection />
       {/* <DecorFlor src="/img/landing/flor1.png" className="flor-derecha" /> */}
       
     </div>

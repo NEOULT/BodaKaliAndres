@@ -1,0 +1,50 @@
+.fotos-section {
+  width: 100vw;
+  min-height: 600px;
+  background: url('/img/landing/fondo_carrusel.png') center center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 0 48px 0;
+  margin-top: -32px;
+  position: relative;
+  z-index: 2;
+}
+
+.fotos-polaroid {
+  background: #fff;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  border-radius: 0;
+  padding: 12px 12px 70px 12px;
+  margin: 0 auto;
+  width: 85vw;
+  max-width: 340px;
+  position: relative;
+  z-index: 3;
+}
+
+.fotos-polaroid img {
+  width: 100%;
+  display: block;
+}
+
+.fotos-polaroid-1 {
+  margin-top: 0px;
+  transform: rotate(-5deg);
+}
+
+.fotos-polaroid-2 {
+  margin-top: -32px;
+  transform: rotate(7deg);
+}
+
+@media (min-width: 600px) {
+  .fotos-section {
+    min-height: 700px;
+    padding-bottom: 80px;
+  }
+  .fotos-polaroid {
+    max-width: 400px;
+  }
+}

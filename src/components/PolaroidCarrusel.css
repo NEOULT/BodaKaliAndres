@@ -1,0 +1,112 @@
+.polaroid-carrusel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -32px;
+}
+
+.polaroid-frame {
+  background: #fff;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  border-radius: 0;
+  padding: 12px 12px 18px 12px;
+  width: 85vw;
+  max-width: 340px;
+  min-height: 340px;
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
+  transform: rotate(7deg);
+}
+
+.polaroid-image-wrapper {
+  width: 100%;
+  height: 340px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.polaroid-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: none;
+  opacity: 1;
+}
+
+.slide-in {
+  animation: slideInLeft 0.7s forwards;
+  z-index: 2;
+}
+.slide-out {
+  animation: slideOutLeft 0.7s forwards;
+  z-index: 1;
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-100%); opacity: 1; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes slideOutLeft {
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(100%); opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s forwards;
+  z-index: 2;
+}
+.fade-out {
+  animation: fadeOut 0.8s forwards;
+  z-index: 1;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.polaroid-controls {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 12px;
+}
+
+.polaroid-controls button {
+  background: #7C2323;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+}
+
+.polaroid-controls button:hover {
+  background: #a03a3a;
+}
+
+@media (min-width: 600px) {
+  .polaroid-frame {
+    max-width: 400px;
+    min-height: 400px;
+  }
+  .polaroid-image-wrapper {
+    height: 400px;
+  }
+}
