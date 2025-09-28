@@ -22,18 +22,14 @@ import FotosSection from "../components/FotosSection";
 
 export default function Landing() {
 
-  const [isModalNormasOpen, setModalNormasOpen] = useState(false);
-  const [isModalMenuOpen, setModalMenuOpen] = useState(false);
+  
 
   return (
     <div className="landing-page">
-      <button onClick={() => setModalMenuOpen(true)}>
-        Abrir Modal
-      </button>
       <LandingHero />
       {/* <DecorFlor src="/img/landing/flor2.png" className="flor-izquierda" /> */}
-      <ModalMenu isModalOpen={isModalMenuOpen} setIsModalOpen={setModalMenuOpen} />
-      <ModalNormas isModalOpen={isModalNormasOpen} setIsModalOpen={setModalNormasOpen} />
+  
+
       <LandingSection>
         <h2 className="landing-title">UNA PROMESA...</h2>
         <p className="landing-main-text">El Señor mismo marchará al frente de ti y estará contigo; nunca te dejará ni te abandonará. No temas ni te desanimes</p>

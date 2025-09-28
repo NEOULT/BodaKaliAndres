@@ -8,6 +8,7 @@
     justify-content: center;
     box-sizing: border-box;
     position: relative;
+    border-radius: 20px;
 }
 
 .modal-menu-card {
@@ -59,7 +60,7 @@
 }
 
 .modal-menu-content img:first-child {
-    bottom: -380px;
+    bottom: -300px;
     width: 150px;
     right: 1px;
 }

@@ -25,8 +25,8 @@ const ModalMenu = ({isModalOpen, setIsModalOpen}) => {
                 <img src="/img/flor_lateral_izq_menu.png" alt="Flor izquierda"  />
                 <img src="/img/flor_superior_izq_menu.png" alt="Flor derecha" />
 
-                <h2 className="landing-title modal-title" style={{ color: '#DCC3A4', marginTop: '0'}}>MENÚ</h2>
-                <CardComponent price="$35">
+                <h2 className="landing-title modal-title" style={{ color: '#DCC3A4', marginTop: '30px'}}>MENÚ</h2>
+                <CardComponent price="$10">
                     <ul className="menu-list">
                         <li><strong>Lomo de Cerdo:</strong> Ensalada César y un contorno a elegir</li>
                         <li><strong>Pinchos de pollo:</strong> 2 contornos a elegir</li>
@@ -37,7 +37,7 @@ const ModalMenu = ({isModalOpen, setIsModalOpen}) => {
                     <p style={{ textAlign: 'center' }}>Bebidas: <br />Pepsi, 7up y Té Jamaica</p>
                 </CardComponent>
 
-                <CardComponent price="$35">
+                <CardComponent price="$15">
                     <p style={{ textAlign: 'center' }}>2 Hamburguesas con 2 bebidas y papas fritas</p>
                     <p style={{ textAlign: 'center' }}>Bebidas: <br />Pepsi, 7up y Té Jamaica</p>
                 </CardComponent>
