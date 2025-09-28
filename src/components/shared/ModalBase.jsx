@@ -2,7 +2,7 @@ import React from "react";
 import "./ModalBase.css";
 import { useEffect } from "react";
 
-const ModalBase = ({ isOpen, children }) => {
+const ModalBase = ({ isOpen, children, slideAnimation = false }) => {
 
     useEffect(() => {
         if (isOpen) {
@@ -19,7 +19,7 @@ const ModalBase = ({ isOpen, children }) => {
 
     return (
         <div className="modal-overlay">
-            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <div className={`modal-content ${slideAnimation ? "slide-in" : ""}`} onClick={(e) => e.stopPropagation()}>
                 {children}
             </div>
         </div>

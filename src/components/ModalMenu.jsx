@@ -17,7 +17,7 @@ const ModalMenu = ({isModalOpen, setIsModalOpen}) => {
     );
 
     return (
-        <ModalBase isOpen={isModalOpen} onClose={closeModal}>
+        <ModalBase isOpen={isModalOpen} onClose={closeModal} slideAnimation={true}>
             <div className="modal-menu-content">
 
                 <img src="/img/flor_inferior_izq_menu.png" alt="Flor abajo izquierda"  />
