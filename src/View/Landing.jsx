@@ -7,13 +7,24 @@ import ThemedText from "../components/shared/ThemedText";
 import CountdownSection from "../components/CountdownSection";
 import TeEsperamosSection from "../components/TeEsperamosSection";
 import CeremoniaSection from "../components/CeremoniaSection";
+import ModalNormas from "../components/ModalNormas";
+import ModalMenu from "../components/ModalMenu";
+import { useState } from "react";
 
 export default function Landing() {
+
+  const [isModalNormasOpen, setModalNormasOpen] = useState(false);
+  const [isModalMenuOpen, setModalMenuOpen] = useState(false);
+
   return (
     <div className="landing-page">
+      <button onClick={() => setModalMenuOpen(true)}>
+        Abrir Modal
+      </button>
       <LandingHero />
       {/* <DecorFlor src="/img/landing/flor2.png" className="flor-izquierda" /> */}
-      
+      <ModalMenu isModalOpen={isModalMenuOpen} setIsModalOpen={setModalMenuOpen} />
+      <ModalNormas isModalOpen={isModalNormasOpen} setIsModalOpen={setModalNormasOpen} />
       <LandingSection>
         <h2 className="landing-title">UNA PROMESA...</h2>
         <p className="landing-main-text">El Señor mismo marchará al frente de ti y estará contigo; nunca te dejará ni te abandonará. No temas ni te desanimes</p>

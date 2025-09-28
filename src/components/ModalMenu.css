@@ -1,0 +1,87 @@
+.modal-menu-content {
+    padding: 20px 45px 35px 45px; 
+    height: 80vh;
+    overflow-y: auto;
+    background-color: #731516;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.modal-menu-card {
+    position: relative;
+    width: 100%; 
+    max-width: 100%;
+    border: 1px solid #DCC3A4;
+    border-radius: 20px;
+    padding: 10px 20px 28px 20px;
+    background-color: transparent;
+    box-sizing: border-box; 
+    margin-bottom: 55px;
+}
+
+.modal-menu-button {
+    background-color: #DCC3A4;
+    color: #731516;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+
+.modal-menu-card-price {
+    position: absolute;
+    padding: 6px 18px;
+    background-color: #DCC3A4;
+    color: #351D02;
+    border-radius: 5px;
+    bottom: -20px;
+    right: 35%;
+    font-size: 25px;
+    font-weight: bold;
+}
+.modal-close-button {
+    background-color: #cbb292;
+    border: none;
+    color: #731516;
+}
+
+.modal-menu-content img {
+    position: absolute;
+    height: auto;
+    z-index: 1; 
+    pointer-events: none; 
+}
+
+.modal-menu-content img:first-child {
+    bottom: -380px;
+    width: 150px;
+    right: 1px;
+}
+
+.modal-menu-content img:nth-child(2) {
+    top: 1px;
+    width: 150px;
+    right: 1px;
+    opacity: 0.5;
+    filter: grayscale(100%) brightness(0);
+}
+
+.modal-menu-content img:nth-child(3) {
+    bottom: -100px;
+    left: 1px;
+    width: 140px;
+    opacity: 0.5;
+    filter: grayscale(100%) brightness(0);
+}
+
+.modal-menu-content img:nth-child(4) {
+    top: 1px;
+    left: -1px;
+    width: 100px;
+}
