@@ -5,11 +5,20 @@ import LandingSection from "../components/LandingSection";
 import DecorFlor from "../components/DecorFlor";
 import ThemedText from "../components/shared/ThemedText";
 import CountdownSection from "../components/CountdownSection";
+import DressCodeSection from "../components/DressCodeSection";
+import NormasSection from "../components/NormasSection";
 import TeEsperamosSection from "../components/TeEsperamosSection";
 import CeremoniaSection from "../components/CeremoniaSection";
 import ModalNormas from "../components/ModalNormas";
 import ModalMenu from "../components/ModalMenu";
 import { useState } from "react";
+import RecepcionSection from "../components/RecepcionSection";
+import NinosSection from "../components/NinosSection";
+import SobreRecepcionSection from "../components/SobreRecepcionSection";
+import MenuSection from "../components/MenuSection";
+import ConfirmacionSection from "../components/ConfirmacionSection";
+import FotosSection from "../components/FotosSection";
+
 
 export default function Landing() {
 
@@ -61,7 +70,23 @@ export default function Landing() {
       <TeEsperamosSection />
 
       <CeremoniaSection />
+
+      <DressCodeSection />
+
+      <NormasSection />
+
+      <LandingSection>
+        <img 
+        style={{ maxWidth: '110%', height: 'auto' }}
+        src="/img/landing/imagen_intermedia.png" alt="Celebración" className="celebracion-img" />
+      </LandingSection>
       
+      <RecepcionSection />
+      <NinosSection />
+      <SobreRecepcionSection />
+  <MenuSection />
+  <ConfirmacionSection />
+  <FotosSection />
       {/* <DecorFlor src="/img/landing/flor1.png" className="flor-derecha" /> */}
       
     </div>

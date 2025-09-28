@@ -19,22 +19,18 @@
 
 @font-face {
   font-family: 'Gilroy-Light';
-  src: url('/fonts/Gilroy-Light.ttf') format('truetype');
+  src: url('/fonts/Gilroy-Light.otf') format('truetype');
 }
 
 @font-face {
   font-family: 'Gilroy-ExtraBold';
-  src: url('/fonts/Gilroy-ExtraBold.ttf') format('truetype');
+  src: url('/fonts/Gilroy-ExtraBold.otf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Poppins';
-  src: url('/fonts/Poppins-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 
 .test-poppins {
   font-family: 'Poppins';

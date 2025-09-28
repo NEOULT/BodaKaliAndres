@@ -1,0 +1,39 @@
+.sobre-recepcion-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 18px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sobre-recepcion-section .themed-text--title {
+  font-family: 'GildaDisplay', serif;
+  color: #7C2323;
+  font-size: 2.1rem;
+  text-align: center;
+  letter-spacing: 0.12em;
+  margin-bottom: 18px;
+}
+
+.sobre-recepcion-text {
+  font-family: 'Gilroy-Light', sans-serif;
+  color: #683B06;
+  font-size: 1.15rem;
+  text-align: center;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.sobre-recepcion-text p {
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+.sobre-recepcion-text p strong,
+.sobre-recepcion-text p span[style*="font-weight: 700"] {
+  font-family: 'Gilroy-ExtraBold', sans-serif;
+  font-weight: 700;
+  color: #683B06;
+}

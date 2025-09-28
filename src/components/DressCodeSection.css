@@ -1,0 +1,24 @@
+.dresscode-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.dresscode-img {
+  width: 160px;
+  height: auto;
+}
+
+.themed-text--title {
+  font-family: 'GildaDisplay', serif;
+  letter-spacing: 0.12em;
+}
+
+.themed-text--subtitle {
+  font-family: 'Gilroy-ExtraBold', sans-serif;
+  letter-spacing: 0.08em;
+}

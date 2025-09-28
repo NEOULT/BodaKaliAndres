@@ -1,0 +1,38 @@
+
+.normas-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 18px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.normas-section .themed-text--default {
+  text-align: center;
+  max-width: 540px;
+  margin: 0 auto;
+  white-space: pre-line;
+}
+
+.normas-btn {
+  background: #7C2323;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 16px 38px;
+  font-family: 'Gilroy-ExtraBold', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 18px;
+  margin-top: 8px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.normas-btn:hover {
+  background: #a03a3a;
+}
