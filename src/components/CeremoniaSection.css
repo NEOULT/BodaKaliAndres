@@ -21,15 +21,16 @@
   font-weight: 400;
 }
 .ceremonia-place {
-  font-family: 'GildaDisplay', serif;
+  font-family: 'Gilroy-ExtraBold', sans-serif;
   color: #B1732A;
   font-size: 1.1rem;
   text-align: center;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.20em;
   margin-bottom: 18px;
   font-weight: 400;
   text-transform: uppercase;
 }
+
 .ceremonia-time-row {
   display: flex;
   align-items: center;
