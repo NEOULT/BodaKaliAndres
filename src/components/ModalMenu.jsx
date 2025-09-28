@@ -34,12 +34,12 @@ const ModalMenu = ({isModalOpen, setIsModalOpen}) => {
                         <li><strong>Parrillas Personales (Pollo, Carne o Mixta):</strong> Con ensalada coleslaw y yuca cocida</li>
                         <li><strong>Pasta Boloñesa</strong></li>
                     </ul>
-                    <p style={{ textAlign: 'center' }}>Bebidas: <br />Pepsi, 7up y Té Jamaica</p>
+                    <p style={{ textAlign: 'center', fontFamily: 'Poppins, sans-serif' }}>Bebidas: <br />Pepsi, 7up y Té Jamaica</p>
                 </CardComponent>
 
                 <CardComponent price="$15">
-                    <p style={{ textAlign: 'center' }}>2 Hamburguesas con 2 bebidas y papas fritas</p>
-                    <p style={{ textAlign: 'center' }}>Bebidas: <br />Pepsi, 7up y Té Jamaica</p>
+                    <p style={{ textAlign: 'center', fontFamily: 'Poppins, sans-serif' }}>2 Hamburguesas con 2 bebidas y papas fritas</p>
+                    <p style={{ textAlign: 'center', fontFamily: 'Poppins, sans-serif' }}>Bebidas: <br />Pepsi, 7up y Té Jamaica</p>
                 </CardComponent>
                 <button onClick={closeModal} className="modal-close-button">
                     Cerrar

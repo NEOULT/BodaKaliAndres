@@ -29,15 +29,6 @@
   font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
-
-.test-poppins {
-  font-family: 'Poppins';
-  font-size: 2rem;
-  color: #683B06;
-  margin: 24px 0;
-}
 
 #root {
   max-width: 1280px;
