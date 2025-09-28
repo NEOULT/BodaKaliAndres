@@ -1,0 +1,229 @@
+@font-face {
+  font-family: 'GildaDisplay';
+  src: url('/fonts/GildaDisplay-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Slight';
+  src: url('/fonts/Slight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NekaLaurent';
+  src: url('/fonts/NekaLaurent.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f7f6f2;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.invitacion {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 0 0 40px rgba(0,0,0,0.18);
+  border-radius: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.titulo {
+  margin-top: 32px;
+  color: #683B06;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: 'GildaDisplay', serif;
+  font-weight: 400;
+}
+
+.nombres-boda {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 18px auto 0 auto;
+  min-height: 140px;
+  display: block;
+}
+
+.nombre-andres {
+  font-size: 3.2rem;
+  color: #B1732A;
+  font-family: 'Slight', cursive;
+  font-style: italic;
+  transform: skewY(-8deg);
+  margin-bottom: -0.7rem;
+  line-height: 1;
+  position: absolute;
+  left: -10%;
+  top: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.ampersand {
+  font-size: 2.4rem;
+  color: #B1732A;
+  font-family: 'GildaDisplay', serif;
+  font-style: italic;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  display: inline-block;
+  position: absolute;
+  left: 46%;
+  top: 54%;
+  transform: translate(-50%, -50%);
+}
+
+.nombre-kaliana {
+  font-size: 3.2rem;
+  color: #B1732A;
+  font-family: 'Slight', cursive;
+  font-style: italic;
+  transform: skewY(-8deg);
+  line-height: 1;
+  position: absolute;
+  left: 15%;
+  top: 40%;
+  width: 100%;
+  text-align: left;
+}
+
+.fecha {
+  margin-top: 8px;
+  color: #B1732A;
+  font-size: 22px;
+  text-align: center;
+  font-family: 'NekaLaurent', serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Sobre más grande y centrado */
+.sobre-container {
+  position: relative;
+  width: 95vw;
+  max-width: 480px;
+  margin: 0 auto 18px auto;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  box-shadow: #683B06;
+}
+
+/* Sobre rojo */
+.sobre-img {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  z-index: 1;
+}
+
+/* Pareja más pequeña y centrada */
+.pareja-img {
+  position: absolute;
+  left: 50%;
+  top: 38%;
+  width: 100%;
+  max-width: 80px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+/* Flecha apuntando al sello */
+.flecha-img {
+  position: absolute;
+  left: 34%;
+  top: 65%;
+  width: 45px;
+  height: auto;
+  transform: translate(-50%, 0) rotate(12deg);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.texto-invitacion {
+  margin-top: 24px;
+  color: #683B06;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'GildaDisplay', serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin-top: 24px;
+}
+
+.footer .themed-text:first-child {
+  text-align: right;
+  margin-right: 8px;
+  min-width: 110px;
+}
+
+.footer .themed-text:last-child {
+  text-align: left;
+  margin-left: 8px;
+  min-width: 110px;
+}
+
+.numero {
+  background: #fff;
+  border: 1px solid #B1732A;
+  color: #B1732A;
+  font-size: 70px;
+  font-family: 'NekaLaurent', serif;
+  font-weight: 400;
+  border-radius: 12px;
+  width: 70px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.decor-top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: auto;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.decor-bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 180px;
+  height: auto;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 0;
+}

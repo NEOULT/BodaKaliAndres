@@ -1,0 +1,65 @@
+.themed-text {
+  font-family: 'GildaDisplay', serif;
+  letter-spacing: 2px;
+}
+
+.themed-text--title {
+  margin-top: 32px;
+  color: #683B06;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+.themed-text--names {
+  margin-top: 18px;
+  color: #B1732A;
+  font-size: 45px;
+  text-align: center;
+  font-family: 'Slight', cursive;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.themed-text--ampersand {
+  font-family: 'GildaDisplay', serif;
+  font-size: 40px;
+  letter-spacing: 10px;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.themed-text--date {
+  margin-top: 8px;
+  color: #B1732A;
+  font-size: 22px;
+  text-align: center;
+  font-family: 'NekaLaurent', serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.themed-text--invitation {
+  margin-top: 38px;
+  color: #683B06;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'GildaDisplay', serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+.themed-text--footer {
+  font-family: 'Gilroy-Light', sans-serif;
+  color: #683B06;
+  font-size: 15px;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}

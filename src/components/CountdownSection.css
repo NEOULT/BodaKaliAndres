@@ -1,0 +1,86 @@
+.countdown-section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 38px 0 48px 0;
+}
+
+.countdown-title {
+  font-family: 'GildaDisplay', serif;
+  color: #683B06;
+  font-size: 1.87rem;
+  text-align: center;
+  letter-spacing: 0.12em;
+  margin-bottom: 18px;
+  font-weight: 400;
+}
+
+.countdown-timer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0px;
+  margin-bottom: 8px;
+}
+
+.countdown-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 70px;
+}
+.countdown-number {
+  font-family: 'NekaLaurent', serif;
+  color: #B1732A;
+  font-size: 3.2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.countdown-sep {
+  font-family: 'GildaDisplay', serif;
+  color: #B1732A;
+  font-size: 2.38rem;
+  font-weight: 400;
+  margin: 0 6px;
+  display: inline-block;
+  transform: translateY(-12px);
+}
+
+.countdown-label {
+  font-family: 'GildaDisplay', serif;
+  color: #683B06;
+  font-size: 0.765rem;
+  letter-spacing: 0.12em;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 2px;
+}
+
+.calendar-btn {
+  background: #8B1818;
+  color: #fff;
+  font-family: 'Gilroy-ExtraBold', sans-serif;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 48px;
+  padding: 18px 38px;
+  margin-top: 12px;
+  cursor: pointer;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 340px;
+  min-width: 220px;
+}
+.calendar-btn:hover {
+  background: #B1732A;
+}
