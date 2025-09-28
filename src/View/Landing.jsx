@@ -13,6 +13,7 @@ import RecepcionSection from "../components/RecepcionSection";
 import NinosSection from "../components/NinosSection";
 import SobreRecepcionSection from "../components/SobreRecepcionSection";
 import MenuSection from "../components/MenuSection";
+import ConfirmacionSection from "../components/ConfirmacionSection";
 
 
 export default function Landing() {
@@ -68,10 +69,11 @@ export default function Landing() {
         src="/img/landing/imagen_intermedia.png" alt="Celebración" className="celebracion-img" />
       </LandingSection>
       
-  <RecepcionSection />
-  <NinosSection />
-  <SobreRecepcionSection />
+      <RecepcionSection />
+      <NinosSection />
+      <SobreRecepcionSection />
   <MenuSection />
+  <ConfirmacionSection />
       {/* <DecorFlor src="/img/landing/flor1.png" className="flor-derecha" /> */}
       
     </div>
