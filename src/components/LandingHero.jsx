@@ -9,7 +9,7 @@ export default function LandingHero() {
       <img src="/img/landing/Foto_Principal.png" alt="Foto pareja" className="foto-principal" />
       <div className="audio-player">
         <audio controls>
-          <source src="/audio/tu-cancion.mp3" type="audio/mp3" />
+          <source src="../../public/audio/fidelidad.mp3" type="audio/mp3" />
           Tu navegador no soporta audio.
         </audio>
       </div>
