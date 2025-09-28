@@ -22,10 +22,10 @@
 
 .close-modal-button {
     color: #fff;
-    font-family: 'Gilroy-ExtraBold', sans-serif;
+    font-family: 'Poppins', sans-serif;
     border: none;
     border-radius: 48px;
-    padding: 18px 38px;
+    padding: 14px 35px;
     margin-top: 12px;
     box-shadow: 0 2px 16px rgba(0,0,0,0.08);
     letter-spacing: 0.04em;
@@ -50,7 +50,7 @@
 }
 
 .normas-item {
-    font-family: 'Gilroy-Light', serif;
+    font-family: 'Poppins', serif;
     color: #B1732A;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }

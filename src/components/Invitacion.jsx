@@ -47,7 +47,7 @@ export default function Invitacion() {
       </div>
       <ThemedText
         style={{
-          fontFamily: "Gilroy-Light, sans-serif",
+          fontFamily: "Poppins, sans-serif",
           color: "#683B06", 
           marginTop: 10,
           fontSize: 15,

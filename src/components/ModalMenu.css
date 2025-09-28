@@ -23,6 +23,10 @@
     margin-bottom: 55px;
 }
 
+.menu-list > li {
+    font-family: 'Poppins', sans-serif;
+}
+
 .modal-menu-button {
     background-color: #DCC3A4;
     color: #731516;
@@ -45,6 +49,7 @@
     right: 35%;
     font-size: 25px;
     font-weight: bold;
+    font-family: 'NekaLaurent', serif;
 }
 .modal-close-button {
     background-color: #cbb292;

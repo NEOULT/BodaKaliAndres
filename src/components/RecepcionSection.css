@@ -33,7 +33,7 @@
   border: none;
   border-radius: 40px;
   padding: 16px 38px;
-  font-family: 'Gilroy-ExtraBold', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -53,9 +53,9 @@
 }
 
 .themed-text--subtitle {
-  font-family: 'Gilroy-ExtraBold', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .themed-text--default {
-  font-family: 'Gilroy-Light', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }

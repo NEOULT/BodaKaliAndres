@@ -11,14 +11,14 @@ export default function RegaloSection() {
           ¿QUIERES DARNOS 
         </ThemedText>
         <span style={{ fontFamily: 'Slight', color: '#B1732A', fontSize: '2.2rem', fontWeight: 400, top: '-20px', position: 'relative' }}>un regalo?</span>
-        <ThemedText variant="default" style={{ fontFamily: 'Gilroy-Light, sans-serif', color: '#683B06', fontSize: '1.15rem', textAlign: 'center', margin: '18px 0 18px 0', maxWidth: 420 }}>
+        <ThemedText variant="default" style={{ fontFamily: 'Poppins, sans-serif', color: '#683B06', fontSize: '1.15rem', textAlign: 'center', margin: '18px 0 18px 0', maxWidth: 420 }}>
           Tu presencia será el mejor regalo, pero si deseas obsequiarnos algo más, aquí te dejamos estas opciones:
         </ThemedText>
         <img src="/img/landing/logo_regalos.png" alt="Sobre regalo" className="regalo-img" />
         <ThemedText variant="title" style={{ fontFamily: 'GildaDisplay, serif', color: '#7C2323', fontSize: '1.5rem', textAlign: 'center', letterSpacing: '0.12em', margin: '18px 0 0 0' }}>
           LLUVIA DE SOBRES
         </ThemedText>
-        <ThemedText variant="default" style={{ fontFamily: 'Gilroy-Light, sans-serif', color: '#683B06', fontSize: '1.1rem', textAlign: 'center', margin: '8px 0 18px 0' }}>
+        <ThemedText variant="default" style={{ fontFamily: 'Poppins, sans-serif', color: '#683B06', fontSize: '1.1rem', textAlign: 'center', margin: '8px 0 18px 0' }}>
           El día del evento
         </ThemedText>
         <div className="regalo-opciones">
