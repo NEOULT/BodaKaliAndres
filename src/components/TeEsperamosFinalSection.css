@@ -1,0 +1,32 @@
+.te-esperamos-final-section {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.te-esperamos-final-titulo {
+  font-family: 'Slight', cursive;
+  color: #B1732A;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 32px 0 64px 0;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  rotate: -2deg;
+}
+
+.te-esperamos-final-img {
+  width: 100vw;
+  max-width: 700px;
+  display: block;
+  margin: 0 auto;
+  margin-top: -32px;
+  object-fit: cover;
+  border-radius: 0;
+}

@@ -1,6 +1,14 @@
 import React from "react";
-import "../View/Landing.css";
+import "./DecorFlor.css";
 
-export default function DecorFlor({ src, className = "" }) {
-  return <img src={src} alt="" className={className} />;
+export default function DecorFlor({ src, posicion = "izquierda", style = {} }) {
+  // posicion: "izquierda" | "derecha"
+  return (
+    <img
+      src={src}
+      alt=""
+      className={`decor-flor ${posicion}`}
+      style={style}
+    />
+  );
 }

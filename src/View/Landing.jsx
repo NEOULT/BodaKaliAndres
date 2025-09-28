@@ -9,9 +9,6 @@ import DressCodeSection from "../components/DressCodeSection";
 import NormasSection from "../components/NormasSection";
 import TeEsperamosSection from "../components/TeEsperamosSection";
 import CeremoniaSection from "../components/CeremoniaSection";
-import ModalNormas from "../components/ModalNormas";
-import ModalMenu from "../components/ModalMenu";
-import { useState } from "react";
 import RecepcionSection from "../components/RecepcionSection";
 import NinosSection from "../components/NinosSection";
 import SobreRecepcionSection from "../components/SobreRecepcionSection";
@@ -19,6 +16,7 @@ import MenuSection from "../components/MenuSection";
 import ConfirmacionSection from "../components/ConfirmacionSection";
 import FotosSection from "../components/FotosSection";
 import RegaloSection from "../components/RegaloSection";
+import TeEsperamosFinalSection from "../components/TeEsperamosFinalSection";
 
 
 export default function Landing() {
@@ -28,20 +26,20 @@ export default function Landing() {
   return (
     <div className="landing-page">
       <LandingHero />
-      {/* <DecorFlor src="/img/landing/flor2.png" className="flor-izquierda" /> */}
-  
 
       <LandingSection>
         <h2 className="landing-title">UNA PROMESA...</h2>
         <p className="landing-main-text">El Señor mismo marchará al frente de ti y estará contigo; nunca te dejará ni te abandonará. No temas ni te desanimes</p>
         <p className="landing-verse">DEUTERONOMIO 31:8</p>
       </LandingSection>
+    
       
       <LandingSection>
         <h2 className="landing-title">...DOS VIDAS</h2>
         <p className="landing-main-text">Unidas por nuestro buen Dios<br />para escribir una</p>
         <p className="landing-history">NUEVA HISTORIA</p>
       </LandingSection>
+        
 
       <LandingSection>
         <ThemedText variant="title" style={{ marginBottom: 12, fontSize: '30px' }}>
@@ -59,34 +57,47 @@ export default function Landing() {
           </ThemedText>
         </div>
       </LandingSection>
+    
 
       <LandingSection>
         <CountdownSection />
       </LandingSection>
+        
 
       <TeEsperamosSection />
 
       <CeremoniaSection />
+  
 
       <DressCodeSection />
 
       <NormasSection />
+  
 
       <LandingSection>
         <img 
         style={{ maxWidth: '110%', height: 'auto' }}
         src="/img/landing/imagen_intermedia.png" alt="Celebración" className="celebracion-img" />
       </LandingSection>
+    
       
       <RecepcionSection />
-      <NinosSection />
-      <SobreRecepcionSection />
-      <MenuSection />
-      <ConfirmacionSection />
-      <FotosSection />
-      <RegaloSection />
       
-      {/* <DecorFlor src="/img/landing/flor1.png" className="flor-derecha" /> */}
+          <NinosSection />
+  
+          <SobreRecepcionSection />
+      
+          <MenuSection />
+  
+          <ConfirmacionSection />
+      
+          <FotosSection />
+  
+          <RegaloSection />
+      
+          <TeEsperamosFinalSection />
+  
+          
       
     </div>
   );

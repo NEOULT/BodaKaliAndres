@@ -1,0 +1,15 @@
+.decor-flor {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  pointer-events: none;
+  width: 200px;
+}
+.decor-flor.izquierda {
+  left: 0;
+  rotate: 25deg;
+}
+.decor-flor.derecha {
+  right: 0;
+  rotate: -50deg;
+}
