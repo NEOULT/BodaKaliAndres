@@ -21,7 +21,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #f7f6f2 !important;
+  background: #f7f6f2;
   min-height: 100vh;
   min-width: 100vw;
 }
