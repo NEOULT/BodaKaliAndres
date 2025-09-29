@@ -73,7 +73,7 @@ export default function Invitacion() {
         </ThemedText>
         <span className="numero">{numero}</span>
         <ThemedText variant="footer" style={{ fontFamily: 'GildaDisplay, serif' }}>
-          LUGARES<br />DE HONOR
+          {numero === "2" ? "LUGARES" : "LUGAR"}<br />DE HONOR
         </ThemedText>
       </div>
     </div>

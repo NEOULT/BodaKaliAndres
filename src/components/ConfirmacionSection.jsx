@@ -33,7 +33,7 @@ export default function ConfirmacionSection() {
           <span style={{ fontFamily: 'Slight', fontSize: '3.5rem', color: '#DCC3A4', fontWeight: 400, position: 'relative', top: '-40px' }}>asistencia</span>
         </div>
         <p className="confirmacion-text">
-          Para ayudarnos a organizar con amor y orden este día tan especial, te pedimos <b>que confirmes tu asistencia a la ceremonia eclesiástica y/o a la recepción</b>. Tu respuesta nos permitirá preparar cada detalle con cariño y asegurar que todos los invitados estén debidamente registrados.
+          Para ayudarnos a organizar con amor y orden este día tan especial, te pedimos <b>que confirmes tu asistencia a la ceremonia eclesiástica{reserva ? ' y/o a la recepción' : ''}</b>. Tu respuesta nos permitirá preparar cada detalle con cariño y asegurar que todos los invitados estén debidamente registrados.
         </p>
         <button className="confirmacion-btn" onClick={() => url && window.open(url, '_blank', 'noopener,noreferrer')} disabled={!url}>
           CONFIRMAR
