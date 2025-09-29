@@ -6,10 +6,8 @@ const images = [
   "/webp/carrusel/_DSC9554[1].webp",
   "/webp/carrusel/_DSC9564[1].webp",
   "/webp/carrusel/_DSC9568[1].webp",
-  "/webp/carrusel/_DSC9572[1].webp",
   "/webp/carrusel/_DSC9574[1].webp",
   "/webp/carrusel/_DSC9589[1].webp",
-  "/webp/carrusel/_DSC9609[1].webp",
   "/webp/carrusel/_DSC9629[1].webp",
   "/webp/carrusel/_DSC9630[1].webp",
   "/webp/carrusel/_DSC9631[1].webp",
@@ -33,14 +31,10 @@ const images = [
   "/webp/carrusel/_DSC9721[1].webp",
   "/webp/carrusel/_DSC9732[1].webp",
   "/webp/carrusel/_DSC9733[1].webp",
-  "/webp/carrusel/_DSC9742[1].webp",
-  "/webp/carrusel/_DSC9752[1].webp",
-  "/webp/carrusel/_DSC9765[1].webp",
   "/webp/carrusel/_DSC9767[1].webp",
   "/webp/carrusel/_DSC9769[1].webp",
   "/webp/carrusel/_DSC9807[1].webp",
   "/webp/carrusel/_DSC9839[1].webp",
-  "/webp/carrusel/_DSC9851[1].webp"
 ];
 
 export default function PolaroidCarrusel() {
