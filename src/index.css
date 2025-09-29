@@ -7,7 +7,7 @@
   background-color: #ffffff;
 
   font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  color: #213547;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -27,7 +27,27 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #ffffff; /* Fondo fijo para todo el sitio */
+  background-color: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #ffffff;
+    background-color: #ffffff;
+  }
+  body {
+    background-color: #ffffff;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #ffffff;
+    background-color: #ffffff;
+  }
+  body {
+    background-color: #ffffff;
+  }
 }
 
 h1 {
