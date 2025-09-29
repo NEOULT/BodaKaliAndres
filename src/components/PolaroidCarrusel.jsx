@@ -26,7 +26,6 @@ const images = [
   "/webp/carrusel/_DSC9703[1].webp",
   "/webp/carrusel/_DSC9708[1].webp",
   "/webp/carrusel/_DSC9710[1].webp",
-  "/webp/carrusel/_DSC9719[1] (1).webp",
   "/webp/carrusel/_DSC9721[1].webp",
   "/webp/carrusel/_DSC9732[1].webp",
   "/webp/carrusel/_DSC9733[1].webp",
