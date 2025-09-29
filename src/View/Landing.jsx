@@ -114,8 +114,10 @@ export default function Landing() {
       )}
       <div style={{ marginTop: '120px' }}>
         <FadeInOnScroll delay={1300}>
-          <ConfirmacionSection />
-      </FadeInOnScroll>
+          <div style={{ marginTop: '-90px' }}>
+            <ConfirmacionSection />
+          </div>
+        </FadeInOnScroll>
       </div>
       
 
