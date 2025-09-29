@@ -1,7 +1,7 @@
 .fotos-section {
   width: 100vw;
   min-height: 600px;
-  background: url('/img/landing/fondo_carrusel.png') center center/cover no-repeat;
+  background: url('/webp/fondo_carrusel.webp') center center/cover no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;

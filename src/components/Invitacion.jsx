@@ -1,17 +1,24 @@
 import React from "react";
 import "./Invitacion.css";
 import ThemedText from "./shared/ThemedText";
+import { useNavigate } from "react-router-dom";
 
 export default function Invitacion() {
+  const navigate = useNavigate();
 
   // Obtiene el parámetro "n" de la URL
   const params = new URLSearchParams(window.location.search);
   const numero = params.get("n") === "2" ? "2" : "1"; // Por defecto muestra "1"
+  const r = params.get("r") === "true";
+
+  const handleAbrirInvitacion = () => {
+    navigate(`/Boda-Kaliana-Andres?n=${numero}&r=${r}`);
+  };
 
   return (
     <div className="invitacion">
-      <img src="/img/diseño_flor_regordete.png" alt="" className="decor-top-left" />
-      <img src="/img/diseño_flor_alargado.png" alt="" className="decor-bottom-right" />
+  <img src="/webp/diseño_flor_regordete.webp" alt="" className="decor-top-left" />
+  <img src="/webp/diseño_flor_alargado.webp" alt="" className="decor-bottom-right" />
       <ThemedText variant="title" style={{ marginTop: 32 }}>
         NUESTRA BODA
       </ThemedText>
@@ -40,14 +47,14 @@ export default function Invitacion() {
       >
         7-NOV-2025
       </ThemedText>
-      <div className="sobre-container">
-        <img className="sobre-img" src="/img/sobre_rojo.png" alt="Sobre" />
-        <img className="pareja-img" src="/img/pareja.png" alt="Pareja" />
+      <div className="sobre-container" onClick={handleAbrirInvitacion} style={{ cursor: 'pointer' }}>
+  <img className="sobre-img" src="/webp/sobre_rojo.webp" alt="Sobre" />
+  <img className="pareja-img" src="/webp/pareja.webp" alt="Pareja" />
         <img className="flecha-img" src="/img/icon/icono_flecha_punteada.svg" alt="Flecha" />
       </div>
       <ThemedText
         style={{
-          fontFamily: "Poppins, sans-serif",
+          fontFamily: "GildaDisplay, sans-serif",
           color: "#683B06", 
           marginTop: 10,
           fontSize: 15,
@@ -61,11 +68,11 @@ export default function Invitacion() {
         TOCA PARA ABRIR<br />LA INVITACIÓN
       </ThemedText>
       <div className="footer">
-        <ThemedText variant="footer">
+        <ThemedText variant="footer" style={{ fontFamily: 'GildaDisplay, serif' }}>
           HEMOS<br />RESERVADO
         </ThemedText>
         <span className="numero">{numero}</span>
-        <ThemedText variant="footer">
+        <ThemedText variant="footer" style={{ fontFamily: 'GildaDisplay, serif' }}>
           LUGARES<br />DE HONOR
         </ThemedText>
       </div>

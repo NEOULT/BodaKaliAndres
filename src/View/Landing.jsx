@@ -2,7 +2,6 @@ import React from "react";
 import "./Landing.css";
 import LandingHero from "../components/LandingHero";
 import LandingSection from "../components/LandingSection";
-import DecorFlor from "../components/DecorFlor";
 import ThemedText from "../components/shared/ThemedText";
 import CountdownSection from "../components/CountdownSection";
 import DressCodeSection from "../components/DressCodeSection";
@@ -17,87 +16,118 @@ import ConfirmacionSection from "../components/ConfirmacionSection";
 import FotosSection from "../components/FotosSection";
 import RegaloSection from "../components/RegaloSection";
 import TeEsperamosFinalSection from "../components/TeEsperamosFinalSection";
-
+import FadeInOnScroll from "../components/FadeInOnScroll";
 
 export default function Landing() {
-
-  
+  // Obtener el parámetro r de la URL
+  const searchParams = new URLSearchParams(window.location.search);
+  const reserva = searchParams.get('r');
+  const showReserva = reserva !== 'false';
 
   return (
     <div className="landing-page">
-      <LandingHero />
+      <FadeInOnScroll>
+        <LandingHero />
+      </FadeInOnScroll>
 
-      <LandingSection>
-        <h2 className="landing-title">UNA PROMESA...</h2>
-        <p className="landing-main-text">El Señor mismo marchará al frente de ti y estará contigo; nunca te dejará ni te abandonará. No temas ni te desanimes</p>
-        <p className="landing-verse">DEUTERONOMIO 31:8</p>
-      </LandingSection>
-    
-      
-      <LandingSection>
-        <h2 className="landing-title">...DOS VIDAS</h2>
-        <p className="landing-main-text">Unidas por nuestro buen Dios<br />para escribir una</p>
-        <p className="landing-history">NUEVA HISTORIA</p>
-      </LandingSection>
-        
+      <FadeInOnScroll>
+        <LandingSection>
+          <h2 className="landing-title">UNA PROMESA...</h2>
+          <p className="landing-main-text">El Señor mismo marchará al frente de ti y estará contigo; nunca te dejará ni te abandonará. No temas ni te desanimes</p>
+          <p className="landing-verse">DEUTERONOMIO 31:8</p>
+        </LandingSection>
+      </FadeInOnScroll>
 
-      <LandingSection>
-        <ThemedText variant="title" style={{ marginBottom: 12, fontSize: '30px' }}>
-          NUESTRA BODA
-        </ThemedText>
-        <div className="nombres-boda">
-          <ThemedText variant="names" className="nombre-andres">
-            Andrés
+      <FadeInOnScroll delay={100}>
+        <LandingSection>
+          <h2 className="landing-title">...DOS VIDAS</h2>
+          <p className="landing-main-text">Unidas por nuestro buen Dios<br />para escribir una</p>
+          <p className="landing-history">NUEVA HISTORIA</p>
+        </LandingSection>
+      </FadeInOnScroll>
+
+      <FadeInOnScroll delay={200}>
+        <LandingSection>
+          <ThemedText variant="title" style={{ marginBottom: 12, fontSize: '30px' }}>
+            NUESTRA BODA
           </ThemedText>
-          <ThemedText variant="ampersand" className="ampersand">
-            &amp;
-          </ThemedText>
-          <ThemedText variant="names" className="nombre-kaliana">
-            Kaliana
-          </ThemedText>
-        </div>
-      </LandingSection>
-    
+          <div className="nombres-boda">
+            <ThemedText variant="names" className="nombre-andres">
+              Andrés
+            </ThemedText>
+            <ThemedText variant="ampersand" className="ampersand">
+              &amp;
+            </ThemedText>
+            <ThemedText variant="names" className="nombre-kaliana">
+              Kaliana
+            </ThemedText>
+          </div>
+        </LandingSection>
+      </FadeInOnScroll>
 
-      <LandingSection>
-        <CountdownSection />
-      </LandingSection>
-        
+      <FadeInOnScroll delay={300}>
+        <LandingSection>
+          <CountdownSection />
+        </LandingSection>
+      </FadeInOnScroll>
 
-      <TeEsperamosSection />
+      <FadeInOnScroll delay={400}>
+        <TeEsperamosSection />
+      </FadeInOnScroll>
 
-      <CeremoniaSection />
-  
+      <FadeInOnScroll delay={500}>
+        <CeremoniaSection />
+      </FadeInOnScroll>
 
-      <DressCodeSection />
+      <FadeInOnScroll delay={600}>
+        <DressCodeSection />
+      </FadeInOnScroll>
 
-      <NormasSection />
-  
+      <FadeInOnScroll delay={700}>
+        <NormasSection />
+      </FadeInOnScroll>
 
-      <LandingSection>
-        <img 
-        style={{ maxWidth: '110%', height: 'auto' }}
-        src="/img/landing/imagen_intermedia.png" alt="Celebración" className="celebracion-img" />
-      </LandingSection>
-    
-      
-      <RecepcionSection />
-      
-          <NinosSection />
-  
-          <SobreRecepcionSection />
-      
-          <MenuSection />
-  
-          <ConfirmacionSection />
-      
-          <FotosSection />
-  
-          <RegaloSection />
-      
-          <TeEsperamosFinalSection />
-  
-          
+      <FadeInOnScroll delay={800}>
+        <LandingSection>
+          <img 
+            style={{ maxWidth: '110%', height: 'auto' }}
+            src="/webp/imagen_intermedia.webp" alt="Celebración" className="celebracion-img" />
+        </LandingSection>
+      </FadeInOnScroll>
+
+      {showReserva && (
+        <>
+          <FadeInOnScroll delay={900}>
+            <RecepcionSection />
+          </FadeInOnScroll>
+          <FadeInOnScroll delay={1100}>
+            <SobreRecepcionSection />
+          </FadeInOnScroll>
+          <FadeInOnScroll delay={1200}>
+            <MenuSection />
+          </FadeInOnScroll>
+        </>
+      )}
+
+      <FadeInOnScroll delay={1000}>
+        <NinosSection />
+      </FadeInOnScroll>
+
+      <FadeInOnScroll delay={1300} style={{ marginTop: '120px' }}>
+        <ConfirmacionSection />
+      </FadeInOnScroll>
+
+      <FadeInOnScroll delay={1400}>
+        <FotosSection />
+      </FadeInOnScroll>
+
+      <FadeInOnScroll delay={1500}>
+        <RegaloSection />
+      </FadeInOnScroll>
+
+      <FadeInOnScroll delay={1600}>
+        <TeEsperamosFinalSection />
+      </FadeInOnScroll>
       
     </div>
   );

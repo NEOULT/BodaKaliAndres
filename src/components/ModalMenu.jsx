@@ -20,10 +20,10 @@ const ModalMenu = ({isModalOpen, setIsModalOpen}) => {
         <ModalBase isOpen={isModalOpen} onClose={closeModal} slideAnimation={true}>
             <div className="modal-menu-content">
 
-                <img src="/img/flor_inferior_izq_menu.png" alt="Flor abajo izquierda"  />
-                <img src="/img/flor_lateral_derecha_menu.png" alt="Flor abajo derecha"  />
-                <img src="/img/flor_lateral_izq_menu.png" alt="Flor izquierda"  />
-                <img src="/img/flor_superior_izq_menu.png" alt="Flor derecha" />
+                <img src="/webp/flor_inferior_izq_menu.webp" alt="Flor abajo izquierda"  />
+                <img src="/webp/flor_lateral_derecha_menu.webp" alt="Flor abajo derecha"  />
+                <img src="/webp/flor_lateral_izq_menu.webp" alt="Flor izquierda"  />
+                <img src="/webp/flor_superior_izq_menu.webp" alt="Flor derecha" />
 
                 <h2 className="landing-title modal-title" style={{ color: '#DCC3A4', marginTop: '30px'}}>MENÚ</h2>
                 <CardComponent price="$10">

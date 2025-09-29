@@ -2,15 +2,30 @@ import React from "react";
 import LandingSection from "./LandingSection";
 import ThemedText from "./shared/ThemedText";
 import "./ConfirmacionSection.css";
+import { useLocation } from "react-router-dom";
 
 export default function ConfirmacionSection() {
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const n = params.get("n") === "2" ? "2" : "1";
+  const reserva = params.get("r") === "true";
+
+  const FORM_URLS = {
+    "1-false": "https://forms.gle/2u6MkZCHLKj6qy6b6", // 1 pase, no recepción
+    "1-true": "https://forms.gle/AHnywBDQVa6htK3JA",  // 1 pase, sí recepción
+    "2-true": "https://forms.gle/dSptH8hbqPj4wEWD9",  // 2 pases, sí recepción
+    "2-false": "https://forms.gle/aW2WZhufQYbRXs7f9" // 2 pases, no recepción (pendiente)
+  };
+  const key = `${n}-${reserva}`;
+  const url = FORM_URLS[key];
+
   return (
-    <LandingSection>
+    <LandingSection style={{ marginTop: '120px' }}>
       <div className="confirmacion-section">
-        <img src="/img/landing/flor_abajo_izquierda_asistencia.png" alt="Flor abajo izquierda" className="confirmacion-flor confirmacion-flor-abajo-izq" />
-        <img src="/img/landing/flor_abajo_derecha_asistencia.png" alt="Flor abajo derecha" className="confirmacion-flor confirmacion-flor-abajo-der" />
-        <img src="/img/landing/flor_arriba_izquierda_asistencia.png" alt="Flor izquierda" className="confirmacion-flor confirmacion-flor-izq" />
-        <img src="/img/landing/flor_arriba_derecha_asistencia.png" alt="Flor derecha" className="confirmacion-flor confirmacion-flor-der" />
+  <img src="/webp/flor_abajo_izquierda_asistencia.webp" alt="Flor abajo izquierda" className="confirmacion-flor confirmacion-flor-abajo-izq" />
+  <img src="/webp/flor_abajo_derecha_asistencia.webp" alt="Flor abajo derecha" className="confirmacion-flor confirmacion-flor-abajo-der" />
+  <img src="/webp/flor_arriba_izquierda_asistencia.webp" alt="Flor izquierda" className="confirmacion-flor confirmacion-flor-izq" />
+  <img src="/webp/flor_arriba_derecha_asistencia.webp" alt="Flor derecha" className="confirmacion-flor confirmacion-flor-der" />
         <div className="confirmacion-titulo-wrapper">
           <ThemedText variant="title" style={{ fontFamily: 'GildaDisplay, serif', color: '#DCC3A4', fontSize: '2rem', textAlign: 'center', letterSpacing: '0.12em'}}>
             CONFIRMA TU
@@ -20,9 +35,14 @@ export default function ConfirmacionSection() {
         <p className="confirmacion-text">
           Para ayudarnos a organizar con amor y orden este día tan especial, te pedimos <b>que confirmes tu asistencia a la ceremonia eclesiástica y/o a la recepción</b>. Tu respuesta nos permitirá preparar cada detalle con cariño y asegurar que todos los invitados estén debidamente registrados.
         </p>
-        <button className="confirmacion-btn" onClick={() => window.open('https://forms.gle/2h1Jw6QwQwQ2', '_blank', 'noopener,noreferrer')}>
+        <button className="confirmacion-btn" onClick={() => url && window.open(url, '_blank', 'noopener,noreferrer')} disabled={!url}>
           CONFIRMAR
         </button>
+        {!url && (
+          <div style={{ color: '#B1732A', marginTop: 8 }}>
+            Formulario para este caso pendiente
+          </div>
+        )}
         <div className="confirmacion-importante">
           <b>IMPORTANTE:</b>
           <p>
@@ -36,7 +56,7 @@ export default function ConfirmacionSection() {
         <p className="confirmacion-text" style={{ color: '#fff', fontSize: '1.1rem', marginTop: 8 }}>
           Si nos acompañas desde la distancia: Ese día estaremos transmitiendo en vivo por Instagram desde la cuenta:
         </p>
-        <a href="https://instagram.com/kalianaacamarrillo" target="_blank" rel="noopener noreferrer" className="confirmacion-instagram">@kalianaacamarrillo</a>
+        <a href="https://www.instagram.com/kalianacamarillo/" target="_blank" rel="noopener noreferrer" className="confirmacion-instagram">@kalianaacamarrillo</a>
       </div>
     </LandingSection>
   );

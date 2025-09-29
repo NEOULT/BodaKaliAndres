@@ -7,7 +7,7 @@ export default function DressCodeSection() {
   return (
     <LandingSection>
       <div className="dresscode-section">
-        <img src="/img/landing/vestimenta.png" alt="Vestimenta" className="dresscode-img" />
+  <img src="/webp/vestimenta.webp" alt="Vestimenta" className="dresscode-img" />
         <ThemedText variant="title" style={{ color: '#731516', fontSize: '1.8rem', fontFamily: 'GildaDisplay, serif', textAlign: 'center' }}>
           DRESS CODE
         </ThemedText>

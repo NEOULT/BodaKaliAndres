@@ -14,7 +14,7 @@ export default function RegaloSection() {
         <ThemedText variant="default" style={{ fontFamily: 'Poppins, sans-serif', color: '#683B06', fontSize: '1.15rem', textAlign: 'center', margin: '18px 0 18px 0', maxWidth: 420 }}>
           Tu presencia será el mejor regalo, pero si deseas obsequiarnos algo más, aquí te dejamos estas opciones:
         </ThemedText>
-        <img src="/img/landing/logo_regalos.png" alt="Sobre regalo" className="regalo-img" />
+  <img src="/webp/logo_regalos.webp" alt="Sobre regalo" className="regalo-img" />
         <ThemedText variant="title" style={{ fontFamily: 'GildaDisplay, serif', color: '#7C2323', fontSize: '1.5rem', textAlign: 'center', letterSpacing: '0.12em', margin: '18px 0 0 0' }}>
           LLUVIA DE SOBRES
         </ThemedText>
@@ -35,8 +35,8 @@ export default function RegaloSection() {
           </div>
           <div className="regalo-opcion">
             <span className="regalo-opcion-titulo">ZELLE</span>
-            <span>molerorosillo@gmail.com</span>
-            <span>Marco Molero</span>
+            <div>molerorosillo@gmail.com</div>
+            <div>Marco Molero</div>
           </div>
         </div>
       </div>
