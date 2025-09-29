@@ -19,11 +19,11 @@ export default function NormasSection({ setIsModalOpen }) {
               LEER LAS NORMAS
             </span>
           </button>
-          <ThemedText variant="default" style={{ fontFamily: 'Poppins, sans-serif', color: '#683B06', fontSize: '1rem', fontWeight: 500, textAlign: 'center', marginTop: 24, lineHeight: 1.35 }}>
+          <ThemedText variant="default" style={{ fontFamily: 'Poppins, sans-serif', color: '#683B06', fontSize: '1rem', fontWeight: 500, textAlign: 'center', marginTop: 24, lineHeight: 1.35, letterSpacing: '0.04em' }}>
             Estas normas han sido establecidas con cariño para preservar la solemnidad del templo y honrar el significado profundo de la ceremonia. Su cumplimiento asegura que todos compartamos una experiencia armoniosa, respetuosa y digna del compromiso que celebraremos.  Agradecemos de corazón su comprensión y colaboración.
           </ThemedText>
         </div>
       </LandingSection>
-    </>
-  );
+      </>
+    );
 }
