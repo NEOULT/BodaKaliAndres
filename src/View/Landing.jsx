@@ -17,8 +17,13 @@ import FotosSection from "../components/FotosSection";
 import RegaloSection from "../components/RegaloSection";
 import TeEsperamosFinalSection from "../components/TeEsperamosFinalSection";
 import FadeInOnScroll from "../components/FadeInOnScroll";
+import { useState } from "react";
+import ModalMenu from "../components/ModalMenu";
 
 export default function Landing() {
+
+  const [isModalMenuOpen, setModalMenuOpen] = useState(false);
+
   // Obtener el parámetro r de la URL
   const searchParams = new URLSearchParams(window.location.search);
   const reserva = searchParams.get('r');
@@ -108,10 +113,11 @@ export default function Landing() {
             <SobreRecepcionSection />
           </FadeInOnScroll>
           <FadeInOnScroll delay={1200}>
-            <MenuSection />
+            <MenuSection setModalMenuOpen={setModalMenuOpen} />
           </FadeInOnScroll>
         </>
       )}
+      <ModalMenu isModalOpen={isModalMenuOpen} setIsModalOpen={setModalMenuOpen} />
       <div style={{ marginTop: '120px' }}>
         <FadeInOnScroll delay={1300}>
           <div style={{ marginTop: '-90px' }}>

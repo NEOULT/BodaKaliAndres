@@ -2,14 +2,13 @@ import React from "react";
 import LandingSection from "./LandingSection";
 import "./MenuSection.css";
 import ModalMenu from "./ModalMenu";
-import { useState } from "react";
 
-export default function MenuSection() {
-  const [isModalMenuOpen, setModalMenuOpen] = useState(false);
+export default function MenuSection({ setModalMenuOpen }) {
+
+  
 
   return (
       <>
-        <ModalMenu isModalOpen={isModalMenuOpen} setIsModalOpen={setModalMenuOpen} />
         <LandingSection>
           <div className="menu-section">
             <img src="/webp/menu_icon.webp" alt="Menú" className="menu-img" />
