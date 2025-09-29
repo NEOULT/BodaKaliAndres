@@ -41,6 +41,7 @@
   opacity: 1;
 }
 
+
 .slide-in {
   animation: slideInLeft 0.7s forwards;
   z-index: 2;
@@ -48,6 +49,15 @@
 .slide-out {
   animation: slideOutLeft 0.7s forwards;
   z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .slide-in {
+    animation: slideInLeft 1.3s forwards;
+  }
+  .slide-out {
+    animation: slideOutLeft 1.3s forwards;
+  }
 }
 
 @keyframes slideInLeft {
