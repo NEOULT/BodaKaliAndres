@@ -95,6 +95,10 @@ export default function Landing() {
         </LandingSection>
       </FadeInOnScroll>
 
+      <FadeInOnScroll delay={1000}>
+        <NinosSection />
+      </FadeInOnScroll>
+
       {showReserva && (
         <>
           <FadeInOnScroll delay={900}>
@@ -108,14 +112,12 @@ export default function Landing() {
           </FadeInOnScroll>
         </>
       )}
-
-      <FadeInOnScroll delay={1000}>
-        <NinosSection />
+      <div style={{ marginTop: '120px' }}>
+        <FadeInOnScroll delay={1300}>
+          <ConfirmacionSection />
       </FadeInOnScroll>
-
-      <FadeInOnScroll delay={1300} style={{ marginTop: '120px' }}>
-        <ConfirmacionSection />
-      </FadeInOnScroll>
+      </div>
+      
 
       <FadeInOnScroll delay={1400}>
         <FotosSection />

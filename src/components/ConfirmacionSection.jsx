@@ -20,7 +20,7 @@ export default function ConfirmacionSection() {
   const url = FORM_URLS[key];
 
   return (
-    <LandingSection style={{ marginTop: '120px' }}>
+    <LandingSection >
       <div className="confirmacion-section">
   <img src="/webp/flor_abajo_izquierda_asistencia.webp" alt="Flor abajo izquierda" className="confirmacion-flor confirmacion-flor-abajo-izq" />
   <img src="/webp/flor_abajo_derecha_asistencia.webp" alt="Flor abajo derecha" className="confirmacion-flor confirmacion-flor-abajo-der" />
