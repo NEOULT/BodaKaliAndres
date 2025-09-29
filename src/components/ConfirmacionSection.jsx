@@ -56,7 +56,7 @@ export default function ConfirmacionSection() {
         <p className="confirmacion-text" style={{ color: '#fff', fontSize: '1.1rem', marginTop: 8 }}>
           Si nos acompañas desde la distancia: Ese día estaremos transmitiendo en vivo por Instagram desde la cuenta:
         </p>
-        <a href="https://www.instagram.com/kalianacamarillo/" target="_blank" rel="noopener noreferrer" className="confirmacion-instagram">@kalianaacamarrillo</a>
+        <a href="https://www.instagram.com/kalianacamarillo/" target="_blank" rel="noopener noreferrer" className="confirmacion-instagram">@kalianacamarillo</a>
       </div>
     </LandingSection>
   );
