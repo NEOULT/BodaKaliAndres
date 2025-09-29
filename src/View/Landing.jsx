@@ -98,7 +98,7 @@ export default function Landing() {
         <LandingSection>
           <img 
             style={{ maxWidth: '110%', height: 'auto' }}
-            src="/webp/carrusel/_DSC9719[1] (1).webp" alt="Celebración" className="celebracion-img" />
+            src="/webp/imagen_intermedia.webp" alt="Celebración" className="celebracion-img" />
         </LandingSection>
       </FadeInOnScroll>
 

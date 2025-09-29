@@ -54,11 +54,11 @@ export default function Invitacion() {
       </div>
       <ThemedText
         style={{
-          fontFamily: "GildaDisplay, sans-serif",
-          color: "#683B06", 
+          fontFamily: "Poppins, sans-serif",
+          color: "#B1732A", 
           marginTop: 10,
           fontSize: 15,
-          fontWeight: 100,
+          fontWeight: 400,
           textTransform: "uppercase",
           letterSpacing: 3,
           lineHeight: 1.2,
@@ -68,11 +68,11 @@ export default function Invitacion() {
         TOCA PARA ABRIR<br />LA INVITACIÓN
       </ThemedText>
       <div className="footer">
-        <ThemedText variant="footer" style={{ fontFamily: 'GildaDisplay, serif' }}>
+        <ThemedText variant="footer" style={{ fontFamily: 'Poppins, serif', color: '#B1732A', fontWeight: 400 }}>
           HEMOS<br />RESERVADO
         </ThemedText>
         <span className="numero">{numero}</span>
-        <ThemedText variant="footer" style={{ fontFamily: 'GildaDisplay, serif' }}>
+        <ThemedText variant="footer" style={{ fontFamily: 'Poppins, serif', color: '#B1732A', fontWeight: 400 }}>
           {numero === "2" ? "LUGARES" : "LUGAR"}<br />DE HONOR
         </ThemedText>
       </div>
