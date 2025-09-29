@@ -5,8 +5,6 @@ import ModalMenu from "./ModalMenu";
 
 export default function MenuSection({ setModalMenuOpen }) {
 
-  
-
   return (
       <>
         <LandingSection>

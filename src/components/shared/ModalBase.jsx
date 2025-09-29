@@ -6,7 +6,7 @@ const ModalBase = ({ isOpen, children, slideAnimation = false }) => {
 
     useEffect(() => {
         if (isOpen) {
-            // document.body.classList.add("overflow-hidden");
+            document.body.classList.add("overflow-hidden");
         } else {
             document.body.classList.remove("overflow-hidden");
         }

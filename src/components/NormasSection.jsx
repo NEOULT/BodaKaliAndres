@@ -2,23 +2,19 @@ import React from "react";
 import LandingSection from "./LandingSection";
 import ThemedText from "./shared/ThemedText";
 import "./NormasSection.css";
-import ModalNormas from "./ModalNormas";
-import { useState } from "react";
 
-export default function NormasSection() {
+export default function NormasSection({ setIsModalOpen }) {
 
-  const [isModalNormasOpen, setModalNormasOpen] = useState(false);
   return (
     <>
-      <ModalNormas isModalOpen={isModalNormasOpen} setIsModalOpen={setModalNormasOpen} />
       <LandingSection>
         <div className="normas-section">
           <ThemedText variant="title" style={{ fontFamily: 'GildaDisplay, serif', color: '#7C2323', fontSize: '2.1rem', textAlign: 'center', letterSpacing: '0.12em', marginBottom: 18 }}>
             NORMAS <br /> DEL LUGAR
           </ThemedText>
           <button className="normas-btn" onClick={() => {
-            setModalNormasOpen(true);
-          }}>
+                setIsModalOpen(true);
+            }}>
             <span style={{ fontFamily: 'Gilroy-ExtraBold, sans-serif', fontSize: '1.1rem', color: 'white', letterSpacing: '0.04em' }}>
               LEER LAS NORMAS
             </span>

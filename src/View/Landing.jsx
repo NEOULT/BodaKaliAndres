@@ -19,10 +19,12 @@ import TeEsperamosFinalSection from "../components/TeEsperamosFinalSection";
 import FadeInOnScroll from "../components/FadeInOnScroll";
 import { useState } from "react";
 import ModalMenu from "../components/ModalMenu";
+import ModalNormas from "../components/ModalNormas";
 
 export default function Landing() {
 
   const [isModalMenuOpen, setModalMenuOpen] = useState(false);
+  const [isModalNormasOpen, setModalNormasOpen] = useState(false);
 
   // Obtener el parámetro r de la URL
   const searchParams = new URLSearchParams(window.location.search);
@@ -89,7 +91,7 @@ export default function Landing() {
       </FadeInOnScroll>
 
       <FadeInOnScroll delay={700}>
-        <NormasSection />
+        <NormasSection setIsModalOpen={setModalNormasOpen} />
       </FadeInOnScroll>
 
       <FadeInOnScroll delay={800}>
@@ -118,6 +120,7 @@ export default function Landing() {
         </>
       )}
       <ModalMenu isModalOpen={isModalMenuOpen} setIsModalOpen={setModalMenuOpen} />
+      <ModalNormas isModalOpen={isModalNormasOpen} setIsModalOpen={setModalNormasOpen} />
       <div style={{ marginTop: '120px' }}>
         <FadeInOnScroll delay={1300}>
           <div style={{ marginTop: '-90px' }}>
